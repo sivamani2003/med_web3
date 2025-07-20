@@ -62,6 +62,7 @@ const Sidebar = ({ children }: SidebarProps) => {
           { href: '/hospital/ai-settings', icon: Settings, label: 'AI Settings' },
           { href: '/hospital/billing', icon: FileText, label: 'Billing' },
           { href: '/hospital/analytics', icon: Activity, label: 'Analytics' },
+           { href: '/hospital/appointments', icon: Bell, label: 'Appointments' },
           { href: '/hospital/support', icon: Bell, label: 'Support' },
         ];
       
@@ -69,6 +70,7 @@ const Sidebar = ({ children }: SidebarProps) => {
         return [
           ...commonItems,
           { href: '/doctor/search', icon: Search, label: 'Search Patients' },
+          { href: '/doctor/appointments', icon: Bell, label: 'My Appointments' },
           { href: '/doctor/records', icon: FileText, label: 'Upload Records' },
           { href: '/doctor/access', icon: Shield, label: 'QR/OTP Access' },
           { href: '/doctor/profile', icon: Settings, label: 'Profile' },
@@ -77,6 +79,7 @@ const Sidebar = ({ children }: SidebarProps) => {
       case 'patient':
         return [
           ...commonItems,
+          { href: '/patient/appointments', icon: Bell, label: 'Appointments' },
           { href: '/patient/records', icon: FileText, label: 'My Records' },
           { href: '/patient/upload', icon: FileText, label: 'Upload Record' },
           { href: '/patient/share', icon: Shield, label: 'Share Record' },
